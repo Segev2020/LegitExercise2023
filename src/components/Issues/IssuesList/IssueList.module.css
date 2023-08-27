@@ -1,0 +1,25 @@
+.list_page_container {
+  display: flex;
+  align-items: space-between;
+  flex-grow: 1;
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.counter {
+  line-height: 1.5;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.paging {
+  position: absolute;
+  bottom: 0;
+  line-height: 1.5;
+  padding: 0.7rem;
+}
+
+.loading {
+  font-size: larger;
+}

@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Baskervville:ital@0;1&family=DM+Sans:wght@400;700&family=Dancing+Script:wght@400;500;600;700&family=Delicious+Handrawn&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@400;700&family=Noto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rajdhani:wght@400;500;600;700&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --white: #fff;
+  --red: #ff6060;
+  --green: #50c878;
+  --orange: #ff9145;
+  --text-primary: #111;
+  --black: #000;
+  --gray-25: #fcfcfd;
+  --gray-50: #f9fafb;
+  --gray-100: #f2f4f7;
+  --gray-200: #e4e7ec;
+  --gray-300: #d0d5dd;
+  --gray-400: #98a2b3;
+  --gray-500: #667085;
+  --gray-600: #475467;
+  --gray-700: #344054;
+  --gray-800: #1d2939;
+  --gray-900: #10002b;
+  --primary-25: #f3f2fa;
+  --primary-50: #efe5ff;
+  --primary-100: #d3bffe;
+  --primary-200: #b494fe;
+  --primary-300: #9166ff;
+  --primary-400: #7340ff;
+  --primary-500: #6e28da;
+  --primary-600: #5b12ec;
+  --primary-700: #2300bc;
+  --primary-800: #3d395b;
+  --primary-900: #240953;
+  --pine-25: #f4fafb;
+  --pine-50: #dff1f2;
+  --pine-100: #afdcdc;
+  --pine-200: #2accc6;
+  --pine-300: #41b0ae;
+  --pine-400: #039f9c;
+  --pine-500: #008e8a;
+  --pine-600: #00827c;
+  --pine-700: #00726c;
+  --pine-800: #00625c;
+  --pine-900: #00473f;
+  --blue-25: #f5faff;
+  --blue-50: #eff8ff;
+  --blue-100: #d1e9ff;
+  --blue-200: #b2ddff;
+  --blue-300: #84caff;
+  --blue-400: #53b1fd;
+  --blue-500: #2e90fa;
+  --blue-600: #1570ef;
+  --blue-700: #175cd3;
+  --blue-800: #1849a9;
+  --blue-900: #194185;
+  --pink-25: #fef6fb;
+  --pink-50: #fdf2fa;
+  --pink-100: #fce7f6;
+  --pink-200: #fcceee;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: "Inter", sans-serif !important;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  flex-grow: 1;
+}
+
+body {
+  line-height: 1.4;
+  overflow-wrap: break-word;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* 
+  BASE UTIL 
+*/
+.flx {
+  display: flex;
+}
+
+.flx-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.h-full-screen {
+  height: 100vh;
+}
+
+.w-full-screen {
+  height: 100vh;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.h-fit {
+  height: fit-content;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.gap-xs {
+  gap: 0.1rem;
+}
+
+.gap-s {
+  gap: 0.5rem;
+}
+
+.gap-m {
+  gap: 1rem;
+}
+
+.gap-l {
+  gap: 1.5rem;
+}
+
+.gap-xl {
+  gap: 1.5rem;
+}
+
+.gap-xxl {
+  gap: 2rem;
+}
+
+.p-xs {
+  padding: 0.1rem;
+}
+
+.p-s {
+  padding: 0.5rem;
+}
+
+.p-m {
+  padding: 1rem;
+}
+
+.p-l {
+  padding: 1.5rem;
+}
+
+.p-xl {
+  padding: 2rem;
+}
+
+.pr-xs {
+  padding-right: 0.1rem;
+}
+
+.pr-s {
+  padding-right: 0.5rem;
+}
+
+.pr-m {
+  padding-right: 1rem;
+}
+
+.pr-l {
+  padding-right: 1.5rem;
+}
+
+.pr-xl {
+  padding-right: 2rem;
+}
+
+.pl-xs {
+  padding-left: 0.1rem;
+}
+
+.pl-s {
+  padding-left: 0.5rem;
+}
+
+.pl-m {
+  padding-left: 1rem;
+}
+
+.pl-l {
+  padding-left: 1.5rem;
+}
+
+.pl-xl {
+  padding-left: 2rem;
+}
+
+.pt-xs {
+  padding-top: 0.1rem;
+}
+
+.pt-s {
+  padding-top: 0.5rem;
+}
+
+.pt-m {
+  padding-top: 1rem;
+}
+
+.pt-l {
+  padding-top: 1.5rem;
+}
+
+.pt-xl {
+  padding-top: 2rem;
+}
+
+.pb-xs {
+  padding-bottom: 0.1rem;
+}
+
+.pb-s {
+  padding-bottom: 0.5rem;
+}
+
+.pb-m {
+  padding-bottom: 1rem;
+}
+
+.pb-l {
+  padding-bottom: 1.5rem;
+}
+
+.pb-xl {
+  padding-bottom: 2rem;
+}
+
+.color-primary {
+  color: var(--text-primary);
+}
+
+/* 
+  MUI OVERRIDE
+*/
+
+.MuiBadge-badge {
+  font-size: 0.9rem !important;
+}
+
+.css-1frogym-MuiBadge-badge {
+  background-color: var(--primary-400) !important;
+}
+
+.MuiChip-root {
+  height: 2.8rem !important;
+  padding: .8rem 0.2rem !important;
+  border-radius: 10rem !important;
+  letter-spacing: 0.02rem;
+}
+
+.MuiChip-label {
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: inherit !important;
+  color: inherit;
+}
+
+.MuiSvgIcon-root {
+  color: var(--gray-600);
+}
+
+.MuiCardContent-root {
+  width: 100%;
+  padding: 0 !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: #7340ff !important;
+  border-width: 1px !important;
+}
+
+.MuiPagination-ul button {
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+}

@@ -1,0 +1,58 @@
+.selected {
+  border: 0.05rem solid var(--primary-300);
+  border-radius: 0.4rem;
+}
+
+.no_selection {
+  font-size: 1.2rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.date {
+  font-weight: 500;
+}
+
+.meta_data_unit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.description {
+  background-color: var(--gray-200);
+  border-radius: 0.4rem;
+}
+
+.boldtext {
+  font-weight: 600;
+}
+
+.first_code_line {
+  height: 2rem;
+}
+
+.code_line {
+  padding: 0.1rem 2rem;
+}
+
+.first_code_line {
+  background-color: var(--primary-300);
+  color: white;
+  padding: 0 1rem;
+}
+
+.code_container {
+  min-width: 70%;
+}
+
+.code {
+  font-family: "Rajdhani", sans-serif !important;
+  font-weight: 600;
+  padding:.3rem;
+}

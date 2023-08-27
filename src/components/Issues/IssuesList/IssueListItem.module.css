@@ -1,0 +1,33 @@
+.container {
+  border: 0.05rem solid var(--gray-200);
+}
+
+.container:hover {
+  background-color: var(--gray-100);
+  cursor: pointer;
+}
+
+.title {
+  line-height: 1.5;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.date_and_info {
+  height: 1rem;
+  gap: 2rem;
+  color: var(--gray-400);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 1rem;
+  gap: 0.5rem;
+}
+
+.selected {
+  border-color: var(--primary-300);
+  border-radius: 0.3rem;
+}

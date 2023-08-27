@@ -1,0 +1,8 @@
+
+.sperator {
+    width: 100%;
+    height: 0rem;
+    border: 0.01px solid var(--gray-100);
+    align-self: center;
+    margin:.5rem 0;
+  }

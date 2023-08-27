@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 90vw;
+  height: 100%;
+  padding: 2rem;
+  margin-top: 2rem;
+  max-height: calc(100vh - 8rem);
+  min-height: calc(100vh - 8rem);
+  overflow: hidden;
+}

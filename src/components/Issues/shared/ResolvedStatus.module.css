@@ -1,0 +1,10 @@
+.resolved {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+  font-weight: 500;
+  font-size: 1rem;
+  gap: 0.4rem;
+}
