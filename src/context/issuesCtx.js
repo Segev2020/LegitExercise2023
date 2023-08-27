@@ -38,24 +38,42 @@ export default function IssuesContextProvider({ children }) {
         url += `&severity=${activeFilters?.severities?.toString()}`;
       if (activeFilters?.statuses?.length > 0)
         url += `&status=${activeFilters?.statuses?.toString()}`;
-      const res = await fetch(url);
-      const data = await res.json();
-      setPaginationData(JSON.parse(res.headers.map["x-pagination"]));
-      setIssues(
-        data.map((el) => {
-          return { ...el, read: false };
-        })
-      );
+      try {
+        const res = await fetch(url);
+        if (!res.ok) {
+          throw new Error('Something went wrong!' + res.status)
+        }
+        const data = await res.json();
+        setPaginationData(JSON.parse(res.headers.map["x-pagination"]));
+        setIssues(
+          data.map((el) => {
+            return { ...el, read: false };
+          })
+        );
+      } catch (error) {
+        console.error(error)
+      }
+
     };
     getIssues();
   }, [activeFilters, activePage, searchVal]);
 
   useEffect(() => {
+    if (!selectedItem)
+      return;
     const getIssueDetails = async () => {
-      let url = BASE_URL + `/${selectedItem.id}/detailed`;
+      let url = BASE_URL + `/${selectedItem?.id}/detailed`;
       const res = await fetch(url);
-      const data = await res.json();
-      setSelectedItemDetails(data);
+      try {
+        const res = await fetch(url);
+        if (!res.ok) {
+          throw new Error('Something went wrong!' + res.status)
+        }
+        const data = await res.json();
+        setSelectedItemDetails(data);
+      } catch (error) {
+        console.error(error)
+      }
     };
     getIssueDetails();
   }, [selectedItem]);
